@@ -53,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestContrList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestContrList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
@@ -61,6 +61,30 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#609#617#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testListDuckStick.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testListDuckStick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testLoginAdmin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testLoginAdmin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +111,8 @@
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/MyFirstTest.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java" />
+        <option value="$PROJECT_DIR$/ProjectTest/src/test/java/testListDuckStick.java" />
+        <option value="$PROJECT_DIR$/ProjectTest/src/test/java/testLoginAdmin.java" />
       </list>
     </option>
   </component>
@@ -494,6 +520,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#609#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testListDuckStick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testLoginAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

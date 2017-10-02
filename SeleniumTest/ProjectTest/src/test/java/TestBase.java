@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.HasCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -32,9 +33,9 @@ public class TestBase  {
     @Before
     public void start (){
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
-        driver = new ChromeDriver(caps);
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
+        driver = new FirefoxDriver(caps);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println(((HasCapabilities) driver).getCapabilities());
 //         DesiredCapabilities cap = new DesiredCapabilities();
 //         cap.setCapability(FirefoxDriver.MARIONETTE,true);

@@ -22,7 +22,7 @@ public class TestContrList extends TestBase {
         Collections.sort(listCou);
         for (int i = 0; i < coulist.size() ; i++) {
             String s = coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent");
-            String num = coulist.get(i).findElement(By.xpath("//td[6]")).getText();
+            String num = coulist.get(i).findElement(By.xpath("/td[6]")).getAttribute("textContent");
             System.out.println(num);
 
 

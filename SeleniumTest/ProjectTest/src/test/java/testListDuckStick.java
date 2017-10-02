@@ -11,7 +11,7 @@ public class testListDuckStick extends TestBase {
     @Test
     public void testSticker () {
         driver.get("http://localhost/litecart/en/");
-        List<WebElement> duckList = driver.findElements(By.cssSelector("div.box li[class^=pro]"));
+        List<WebElement> duckList = driver.findElements(By.cssSelector("a.link "));
         for (int i = 0; i < duckList.size() ; i++) {
             try {
                 duckList.get(i).findElement(By.cssSelector(" div[class^=sticker] "));

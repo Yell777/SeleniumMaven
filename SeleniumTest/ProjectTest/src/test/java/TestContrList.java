@@ -23,9 +23,10 @@ public class TestContrList extends TestBase {
         for (int i = 0; i < coulist.size() ; i++) {
             String s = coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent");
             String num = coulist.get(i).findElement(By.xpath("//td[6]")).getText();
-//            if (s.equals(listCou.get(i))){
-//
-//            }
+            System.out.println(num);
+
+
+            }
 
 
         }
@@ -37,5 +38,4 @@ public class TestContrList extends TestBase {
 
 
 
-    }
 }

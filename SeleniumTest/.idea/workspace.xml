@@ -514,9 +514,12 @@
     <history-entry file="testListDuckStick - 2017.10.02 at 16h 35m 15s.xml">
       <configuration name="testListDuckStick" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testListDuckStick - 2017.10.02 at 20h 15m 50s.xml">
+      <configuration name="testListDuckStick" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="24" y="0" width="1920" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />

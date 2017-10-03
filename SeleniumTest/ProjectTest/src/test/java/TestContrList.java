@@ -22,20 +22,21 @@ public class TestContrList extends TestBase {
             listCouSort.add(coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent"));
         }
         Collections.sort(listCouSort);
-        for (int i = 0; i < coulist.size(); i++) {
-            String s = coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent");
-            try {
-                listCouSort.get(i).equals(s);
-            } catch (Exception ex) {
-                System.out.println("Cписок не в алфавитном порядке");
-                break;
-            }
-        }
+
+//        for (int i = 0; i < coulist.size(); i++) {
+//            String s = coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent");
+//            try {
+//                listCouSort.get(i).equals(s);
+//            } catch (Exception ex) {
+//                System.out.println("Cписок не в алфавитном порядке");
+//                break;
+//            }
+//        }
         listCouSort.clear();
         for (int i = 0; i < coulist.size(); i++) {
             String num = coulist.get(i).findElement(By.xpath("./td[6]")).getAttribute("textContent");
             if (!num.equals("0")){
-                coulist.get(i).findElement(By.xpath("./a[@title='Edit']")).click();
+                coulist.get(i).findElement(By.xpath("./a")).click();
                 List<WebElement> sublist = driver.findElements(By.xpath("//table[@id='table-zones']//tr"));
                 for (int j = 0; j < coulist.size(); j++) {
                     listCouSort.add(coulist.get(j).findElement(By.xpath("./td[3]")).getAttribute("textContent"));

@@ -36,7 +36,7 @@ public class TestContrList extends TestBase {
         for (int i = 0; i < coulist.size(); i++) {
             String num = coulist.get(i).findElement(By.xpath("./td[6]")).getAttribute("textContent");
             if (!num.equals("0")){
-                coulist.get(i).findElement(By.xpath("./a")).click();
+                coulist.get(i).findElement(By.xpath(".//a")).click();
                 List<WebElement> sublist = driver.findElements(By.xpath("//table[@id='table-zones']//tr"));
                 for (int j = 0; j < coulist.size(); j++) {
                     listCouSort.add(coulist.get(j).findElement(By.xpath("./td[3]")).getAttribute("textContent"));

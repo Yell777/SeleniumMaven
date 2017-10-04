@@ -37,7 +37,7 @@ public class TestBase  {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("unexpectedAlertBehaviour", "dismiss");
         driver = new ChromeDriver(caps);
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println(((HasCapabilities) driver).getCapabilities());
 //         DesiredCapabilities cap = new DesiredCapabilities();
 //         cap.setCapability(FirefoxDriver.MARIONETTE,true);

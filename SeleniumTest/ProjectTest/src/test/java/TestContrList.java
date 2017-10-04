@@ -24,31 +24,25 @@ public class TestContrList extends TestBase {
         listCouOrg.addAll(listCouSort);
         Collections.sort(listCouSort);
         Assert.assertTrue("Список не в алфавитном порядке" , listCouSort.equals(listCouOrg) );
-
-//        for (int i = 0; i < coulist.size(); i++) {
-//            String s = coulist.get(i).findElement(By.tagName("a")).getAttribute("textContent");
-//            try {
-//                listCouSort.get(i).equals(s);
-//            } catch (Exception ex) {
-//                System.out.println("Cписок не в алфавитном порядке");
-//                break;
-//            }
-//        }
-//        listCouSort.clear();
+        listCouSort.clear();
+        listCouOrg.clear();
         for (int i = 0; i < coulist.size(); i++) {
             coulist = driver.findElements(By.xpath(".//table[@class='dataTable']//tr[@class='row']"));
             String num = coulist.get(i).findElement(By.xpath("./td[6]")).getAttribute("textContent");
-            if (!num.equals("0")){
+            if (!num.equals("0")) {
                 coulist.get(i).findElement(By.xpath(".//a")).click();
                 List<WebElement> sublist = driver.findElements(By.xpath("//table[@id='table-zones']//tr//input[contains(@name,'][name]')]"));
                 for (int j = 0; j < sublist.size(); j++) {
                     listCouSort.add(sublist.get(j).getAttribute("value"));
-                    System.out.println(sublist.get(j).getAttribute("value"));
                 }
+                listCouOrg.addAll(listCouSort);
+                Collections.sort(listCouSort);
+                Assert.assertTrue("Список не в алфавитном порядке" , listCouSort.equals(listCouOrg) );
                 driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+                listCouSort.clear();
+                listCouOrg.clear();
+
             }
-
         }
-
     }
 }

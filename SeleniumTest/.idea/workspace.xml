@@ -44,7 +44,7 @@
       <file leaf-file-name="TestContrList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
+            <state relative-caret-position="650">
               <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -481,9 +481,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestContrList - 2017.10.04 at 11h 57m 25s.xml">
-      <configuration name="TestContrList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestContrList - 2017.10.04 at 11h 59m 15s.xml">
       <configuration name="TestContrList" configurationId="JUnit" />
     </history-entry>
@@ -509,6 +506,9 @@
       <configuration name="TestContrList" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestContrList - 2017.10.04 at 12h 50m 44s.xml">
+      <configuration name="TestContrList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestContrList - 2017.10.04 at 12h 54m 08s.xml">
       <configuration name="TestContrList" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -637,7 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
+        <state relative-caret-position="650">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />

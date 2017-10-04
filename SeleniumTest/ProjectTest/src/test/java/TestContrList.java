@@ -13,8 +13,8 @@ public class TestContrList extends TestBase {
 
     @Test
     public void testCountryList() {
-        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         loginAdmin();
+        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<WebElement> coulist = driver.findElements(By.xpath(".//table[@class='dataTable']//tr[@class='row']"));
         ArrayList<String> listCouSort = new ArrayList<String>();
         ArrayList<String> listCouOrg = new ArrayList<String>();
@@ -45,4 +45,15 @@ public class TestContrList extends TestBase {
             }
         }
     }
+
+
+    @Test
+    public void testCountryListZone() {
+        loginAdmin();
+        driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+
+
+    }
+
+
 }

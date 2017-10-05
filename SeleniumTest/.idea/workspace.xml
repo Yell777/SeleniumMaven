@@ -30,12 +30,12 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="72" />
+            <state relative-caret-position="293">
+              <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,11 +44,11 @@
       <file leaf-file-name="TestPriceProduct.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestPriceProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="395">
+              <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1507207477925" expanded="true" signature="237:853" ph="..." />
+                <marker date="1507219207357" expanded="true" signature="237:867" ph="..." />
               </folding>
             </state>
           </provider>
@@ -528,39 +528,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPriceProduct - 2017.10.04 at 19h 20m 48s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 34m 57s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.04 at 19h 22m 22s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 38m 19s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.04 at 19h 28m 05s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 40m 24s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.04 at 19h 30m 38s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 46m 17s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 20m 22s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 48m 49s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 28m 44s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 54m 55s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 29m 55s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 58m 08s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 31m 59s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 58m 36s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 40m 31s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 18h 59m 38s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.05 at 15h 43m 33s.xml">
+    <history-entry file="TestPriceProduct - 2017.10.05 at 19h 00m 29s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="0" width="1920" height="1040" extended-state="1" />
+    <frame x="24" y="0" width="1920" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -684,23 +684,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="72" />
+        <state relative-caret-position="293">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestPriceProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        <state relative-caret-position="395">
+          <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1507207477925" expanded="true" signature="237:853" ph="..." />
+            <marker date="1507219207357" expanded="true" signature="237:867" ph="..." />
           </folding>
         </state>
       </provider>

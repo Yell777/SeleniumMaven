@@ -42,17 +42,43 @@ public class TestPriceProduct extends TestBase {
         WebElement duck = driver.findElement(By.xpath("//div[@id='box-campaigns']//li[@class='product column shadow hover-light']"));
         /*Проверка цены (зачеркнута ? )*/
         String linePriceOld = duck.findElement(By.xpath(".//s[@class='regular-price']")).getCssValue("text-decoration-line");
+        System.out.println(linePriceOld);
         Assert.assertTrue("Цена , не зачеркнутая" , line.equals(linePriceOld));
 
         /*Проверка цвета старой цены  */
         String colorPriceOld = duck.findElement(By.xpath(".//s[@class='regular-price']")).getCssValue("color");
+        System.out.println(colorPriceOld);
         if (colorPriceOld.length() == 18){
-
+            String redColorOld = colorPriceOld.substring(4,7);
+            String bluColorOld = colorPriceOld.substring(9,12);
+            String greenColorOld = colorPriceOld.substring(14,17);
+            Assert.assertTrue("Старая цена не серого цвета ", redColorOld.equals(bluColorOld)||bluColorOld.equals(greenColorOld));
         }
         String redColorOld = colorPriceOld.substring(5,8);
         String bluColorOld = colorPriceOld.substring(10,13);
         String greenColorOld = colorPriceOld.substring(15,18);
-        System.out.println(bluColorOld);
+        Assert.assertTrue("Старая цена не серого цвета ", redColorOld.equals(bluColorOld)||bluColorOld.equals(greenColorOld));
+
+        /*Проверка акционной цены  */
+        String priceNewFont = duck.findElement(By.xpath(".//strong[@class='campaign-price']")).getCssValue("font-weight");
+        Assert.assertTrue("Цена , не жирная" , fontweight.equals(priceNewFont));
+
+          /*Проверка цвета акционной цены  */
+        String colorPriceNew = duck.findElement(By.xpath(".//strong[@class='campaign-price']")).getCssValue("color");
+        System.out.println(colorPriceNew);
+//        if (colorPriceOld.length() == 18){
+//            String redColorNew = colorPriceOld.substring(4,7);
+//            String bluColorNew = colorPriceOld.substring(9,12);
+//            String greenColorNew = colorPriceOld.substring(14,17);
+//            Assert.assertTrue("Старая цена не серого цвета ", redColorOld.equals(bluColorOld)||bluColorOld.equals(greenColorOld));
+//        }
+//        String redColorNew = colorPriceOld.substring(5,8);
+//        String bluColorNew = colorPriceOld.substring(10,13);
+//        String greenColorNew = colorPriceOld.substring(15,18);
+//        Assert.assertTrue("Старая цена не серого цвета ", redColorOld.equals(bluColorOld)||bluColorOld.equals(greenColorOld));
+
+
+
 
 
 

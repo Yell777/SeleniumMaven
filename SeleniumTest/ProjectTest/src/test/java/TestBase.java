@@ -16,25 +16,26 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase  {
+public class TestBase {
 
     public WebDriver driver;
     public WebDriverWait wait;
 
-    public boolean isElementPresent (By locator){
+    public boolean isElementPresent(By locator) {
         try {
             driver.findElement(locator);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
+
     boolean areElementsPresent(WebDriver driver, By locator) {
         return driver.findElements(locator).size() > 0;
     }
 
     @Before
-    public void start (){
+    public void start() {
 //        DesiredCapabilities caps = new DesiredCapabilities();
 //        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
         driver = new ChromeDriver();
@@ -46,11 +47,11 @@ public class TestBase  {
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("start-maximized");
 //          driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver, 10);
     }
 
     @After
-    public void stop (){
+    public void stop() {
         driver.quit();
         wait = null;
 

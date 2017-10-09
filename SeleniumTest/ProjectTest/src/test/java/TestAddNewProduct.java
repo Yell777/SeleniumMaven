@@ -3,6 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.io.File;
+
 public class TestAddNewProduct extends TestBase {
 
 
@@ -23,12 +25,12 @@ public class TestAddNewProduct extends TestBase {
         Select sel = new Select(list);
         sel.selectByValue("1");
         driver.findElement(By.xpath("//div[@class='input-wrapper']//input[@value='1-2']")).click();
-        driver.findElement(By.xpath("//input[@name='quantity']")).sendKeys("2.0");
+        driver.findElement(By.xpath("//input[@name='quantity']")).sendKeys("2");
         WebElement list2= driver.findElement(By.xpath("//select[@name='sold_out_status_id']"));
         Select sel2 = new Select(list2);
-        sel.selectByValue("2");
-         driver.findElement(By.xpath("//input[@type='file']")).sendKeys("");
-
+        sel2.selectByValue("2");
+        driver.findElement(By.xpath("//input[@type='file']")).sendKeys("");
+        File file = new File("");
 
 
 

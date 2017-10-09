@@ -27,16 +27,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="310">
+              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestAddNewProduct.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestAddNewProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1066">
-              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#606#614#0" expanded="true" />
@@ -81,6 +91,7 @@
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/testListDuckStick.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestPriceProduct.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java" />
+        <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestAddNewProduct.java" />
       </list>
     </option>
   </component>
@@ -210,7 +221,7 @@
     <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="extract.method.default.visibility" value="public" />
   </component>
-  <component name="RunManager" selected="JUnit.TestPriceProduct">
+  <component name="RunManager" selected="JUnit.TestAddNewProduct">
     <configuration default="false" name="testListDuckStick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ProjectTest" />
@@ -260,6 +271,27 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPriceProduct" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestAddNewProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProjectTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAddNewProduct" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -478,16 +510,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.testListDuckStick" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestContrList" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestPriceProduct" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestAddNewProduct" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestPriceProduct" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestContrList" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.testListDuckStick" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestAddNewProduct" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestPriceProduct" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestContrList" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.testListDuckStick" />
       </list>
     </recent_temporary>
   </component>
@@ -505,14 +539,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPriceProduct - 2017.10.06 at 14h 35m 54s.xml">
-      <configuration name="TestPriceProduct" configurationId="JUnit" />
+    <history-entry file="TestAddNewProduct - 2017.10.09 at 13h 06m 14s.xml">
+      <configuration name="TestAddNewProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.06 at 14h 36m 42s.xml">
-      <configuration name="TestPriceProduct" configurationId="JUnit" />
+    <history-entry file="TestAddNewProduct - 2017.10.09 at 13h 08m 06s.xml">
+      <configuration name="TestAddNewProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPriceProduct - 2017.10.06 at 14h 38m 32s.xml">
-      <configuration name="TestPriceProduct" configurationId="JUnit" />
+    <history-entry file="TestAddNewProduct - 2017.10.09 at 13h 14m 32s.xml">
+      <configuration name="TestAddNewProduct" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestPriceProduct - 2017.10.06 at 14h 39m 11s.xml">
       <configuration name="TestPriceProduct" configurationId="JUnit" />
@@ -537,8 +571,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="0" width="1920" height="1040" extended-state="1" />
-    <editor active="true" />
+    <frame x="24" y="0" width="1920" height="1040" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,7 +589,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -640,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestContrList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1066">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#606#614#0" expanded="true" />
@@ -672,13 +706,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="310">
+          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/TestAddNewProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

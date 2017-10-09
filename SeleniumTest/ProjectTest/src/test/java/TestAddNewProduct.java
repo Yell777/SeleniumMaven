@@ -36,11 +36,10 @@ public class TestAddNewProduct extends TestBase {
         driver.findElement(By.xpath("//input[@name='name[en]']")).sendKeys("TestProduct" + num);
         driver.findElement(By.xpath("//input[@name='code']")).sendKeys("123" + num);
         driver.findElement(By.xpath("//div[@class='input-wrapper']//tr[2]//input[@name='categories[]']")).click();
-        driver.findElement(By.xpath("//div[@class='input-wrapper']//input[@value='1-1']")).click();
         WebElement list= driver.findElement(By.xpath("//div[@id='tab-general']//select[@name='default_category_id']"));
         Select sel = new Select(list);
         sel.selectByValue("1");
-        driver.findElement(By.xpath("//div[@class='input-wrapper']//input[@value='1-2']")).click();
+        driver.findElement(By.xpath("//div[@class='input-wrapper']//input[@value='1-1']")).click();
         driver.findElement(By.xpath("//input[@name='quantity']")).sendKeys("2");
         WebElement list2= driver.findElement(By.xpath("//select[@name='sold_out_status_id']"));
         Select sel2 = new Select(list2);

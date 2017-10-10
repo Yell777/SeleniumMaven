@@ -31,8 +31,23 @@ public class TestBase {
     }
 
     boolean areElementsPresent(WebDriver driver, By locator) {
-        return driver.findElements(locator).size() > 0;
+        try {
+            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            return driver.findElements(locator).size() > 0;
+        }finally {
+            driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
+        }
     }
+
+    boolean areElementsNotPresent(WebDriver driver, By locator) {
+        try {
+            driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
+           return driver.findElements(locator).size() > 0;
+        }finally {
+            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        }
+
+}
 
     @Before
     public void start() {

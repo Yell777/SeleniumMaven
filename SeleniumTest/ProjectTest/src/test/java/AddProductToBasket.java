@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,13 +14,18 @@ public class AddProductToBasket extends TestBase {
 
     @Test
     public void addToCart () {
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver,30);
         driver.get("http://localhost/litecart/en/");
+        WebElement a ;
         List<WebElement> list = driver.findElements(By.xpath("//div[@id='box-most-popular']//ul/li"));
         for (int i = 0; i < 3 ; i++) {
+            list = driver.findElements(By.xpath("//div[@id='box-most-popular']//ul/li"));
             list.get(i).click();
             driver.findElement(By.xpath("//button[@name='add_cart_product']")).click();
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")))
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='cart-wrapper']//span[@class='quantity']")));
+            String s = driver.findElement(By.xpath("//div[@id='cart-wrapper']//span[@class='quantity']")).getAttribute("textContent");
+            Assert.assertTrue("Счетчик не обновлен",Integer.parseInt(s)== i+1);
+
 
 
         }

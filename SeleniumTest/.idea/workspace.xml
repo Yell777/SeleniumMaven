@@ -52,7 +52,7 @@
       <file leaf-file-name="AddProductToBasket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/AddProductToBasket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="590">
               <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExpectedConditions.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.5.3/selenium-support-3.5.3.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <file leaf-file-name="testLinksWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testLinksWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="592" column="45" lean-forward="false" selection-start-line="592" selection-start-column="45" selection-end-line="592" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,6 +97,7 @@
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestAddNewProduct.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/TestBase.java" />
         <option value="$PROJECT_DIR$/ProjectTest/src/test/java/AddProductToBasket.java" />
+        <option value="$PROJECT_DIR$/ProjectTest/src/test/java/testLinksWindow.java" />
       </list>
     </option>
   </component>
@@ -599,7 +600,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="24" y="0" width="1920" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -866,9 +867,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/testLinksWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProjectTest/src/test/java/AddProductToBasket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="590">
           <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />

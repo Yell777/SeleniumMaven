@@ -9,11 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import javax.annotation.Nullable;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -47,7 +48,19 @@ public class TestBase {
             driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         }
 
-}
+
+    }
+
+    public ExpectedCondition<String>thereIsWindowOtherThan(final Set<String> oldWindow){
+        return new ExpectedCondition<String>() {
+            @Nullable
+            public String apply(@Nullable WebDriver webDriver) {
+                Set<String> handles = driver.getWindowHandles();
+                handles.removeAll(oldWindow);
+                return handles.size()> 0 ? handles.iterator().next():null;
+            }
+        };
+    }
 
     @Before
     public void start() {

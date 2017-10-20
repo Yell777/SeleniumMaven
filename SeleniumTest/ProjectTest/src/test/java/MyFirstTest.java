@@ -22,7 +22,7 @@ public class MyFirstTest {
     private WebDriverWait wait;
     @Before
     public void start () throws MalformedURLException {
-        DesiredCapabilities capability = DesiredCapabilities.firefox();
+        DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
         capability.setBrowserName("internet explorer");
         capability.setAcceptInsecureCerts(false);
         driver = new RemoteWebDriver(new URL("http://192.168.5.22:4444/wd/hub"),capability);

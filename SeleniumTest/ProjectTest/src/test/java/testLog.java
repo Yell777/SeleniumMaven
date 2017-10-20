@@ -11,6 +11,7 @@ public class testLog extends TestBase {
 
         loginAdmin();
         driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog");
+        driver.findElement(By.xpath("//a[text()='Rubber Ducks'] ")).click();
         
 
 

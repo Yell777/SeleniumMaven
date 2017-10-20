@@ -14,7 +14,7 @@ public class testLinksWindow extends TestBase {
 
 
     @Test
-    public void testNewwindows () {
+    public void testNewWindows () {
 
         wait = new WebDriverWait(driver, 30);
         String originalWindow = driver.getWindowHandle();

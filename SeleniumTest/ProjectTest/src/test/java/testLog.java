@@ -17,21 +17,20 @@ public class testLog extends TestBase {
         loginAdmin();
         driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog");
         driver.findElement(By.xpath("//a[text()='Rubber Ducks'] ")).click();
-        List <WebElement> list  = driver.findElements(By.xpath("//table[@class='dataTable']//tr[@class='row']/td[3]/a"));
+        List <WebElement> list  = driver.findElements(By.cssSelector("table.dataTable tr td:nth-child(3) a[href*='product']"));
         for (int i = 0; i <list.size() ; i++) {
-            list = driver.findElements(By.xpath("//table[@class='dataTable']//tr[@class='row']/td[3]/a"));
+           list = driver.findElements(By.cssSelector("table.dataTable tr td:nth-child(3) a[href*='product']"));
                 list.get(i).click();
                 List<LogEntry> listLog = driver.manage().logs().get("browser").getAll();
                 if (listLog.size() > 0) {
                     for (int j = 0; j < listLog.size(); j++) {
                         System.out.println(listLog.get(i));
-                        break;
                     }
                 } else {
-                    System.out.println("Логов нет");
+                    System.out.println("Логов нет " + (i + 1)  + " - номер страницы продукта");
                 }
 
-            driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog");
+            driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1");
 
         }
 

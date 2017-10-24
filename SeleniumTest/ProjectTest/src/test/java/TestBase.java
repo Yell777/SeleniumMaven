@@ -9,6 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.annotation.Nullable;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class TestBase {
 
@@ -67,6 +71,13 @@ public class TestBase {
     public void start() {
 //        DesiredCapabilities caps = new DesiredCapabilities();
 //        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
+
+        //--расширенный лог баузера хром
+//        DesiredCapabilities cap = DesiredCapabilities.chrome();
+//        LoggingPreferences logPrefs = new LoggingPreferences();
+//        logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
+//        cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+        ///
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println(((HasCapabilities) driver).getCapabilities());

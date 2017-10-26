@@ -24,85 +24,20 @@ import java.util.logging.Level;
 
 public class TestBase {
 
-    public WebDriver driver;
-    public WebDriverWait wait;
-
-    public boolean isElementPresent(By locator) {
-        try {
-            driver.findElement(locator);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    boolean areElementsPresent(WebDriver driver, By locator) {
-        try {
-            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-            return driver.findElements(locator).size() > 0;
-        }finally {
-            driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
-        }
-    }
-
-    boolean areElementsNotPresent(WebDriver driver, By locator) {
-        try {
-            driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
-           return driver.findElements(locator).size() > 0;
-        }finally {
-            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        }
-
-
-    }
-
-    public ExpectedCondition<String>thereIsWindowOtherThan(final Set<String> oldWindow){
-        return new ExpectedCondition<String>() {
-            @Nullable
-            public String apply(@Nullable WebDriver webDriver) {
-                Set<String> handles = driver.getWindowHandles();
-                handles.removeAll(oldWindow);
-                return handles.size()> 0 ? handles.iterator().next():null;
-            }
-        };
-    }
+//    public static ThreadLocal<Aplication> tlApp = new ThreadLocal<>();
+    public Aplication app;
 
     @Before
     public void start() {
-//        DesiredCapabilities caps = new DesiredCapabilities();
-//        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
+//        if (tlApp.get() != null) {
+//            app = tlApp.get();
+//            return;
+//        }
 
-        //--расширенный лог баузера хром
-//        DesiredCapabilities cap = DesiredCapabilities.chrome();
-//        LoggingPreferences logPrefs = new LoggingPreferences();
-//        logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
-//        cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
-        ///
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        System.out.println(((HasCapabilities) driver).getCapabilities());
-//         DesiredCapabilities cap = new DesiredCapabilities();
-//         cap.setCapability(FirefoxDriver.MARIONETTE,true);
-//      driver = new FirefoxDriver(new FirefoxBinary(new File("C:\\Program Files\\Nightly\\firefox.exe")),new FirefoxProfile(),cap);
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("start-maximized");
-//          driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, 10);
+        app = new Aplication();
+//        tlApp.set(app);
+
+//        Runtime.getRuntime().addShutdownHook(
+//                new Thread(() -> { app.quit(); app = null; }));
     }
-
-    @After
-    public void stop() {
-        driver.quit();
-        wait = null;
-
-    }
-
-    public void loginAdmin() {
-        driver.get("http://localhost/litecart/admin/login.php");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
-    }
-
-
 }

@@ -1,32 +1,38 @@
+package TestBasket;
+
 import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.HasCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.logging.LoggingPreferences;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.annotation.Nullable;
-import java.util.*;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
 
-public class TestBase {
+/**
+ * Created by User on 27.10.2017.
+ */
+public class Application {
 
+    private WebDriver driver;
+    private WebDriverWait wait;
+    private MainPageProduct mainPageProduct;
+    private PageProduct pageProduct;
+    private BasketPage basketPage;
 
-    public WebDriver driver;
-    public WebDriverWait wait;
+    public Application() {
+        driver = new ChromeDriver();
+        mainPageProduct = new MainPageProduct(driver);
+        pageProduct = new PageProduct(driver);
+        basketPage = new BasketPage(driver);
+        wait = new WebDriverWait(driver, 10);
+    }
 
     public boolean isElementPresent(By locator) {
         try {
@@ -68,29 +74,6 @@ public class TestBase {
         };
     }
 
-    @Before
-    public void start() {
-//        DesiredCapabilities caps = new DesiredCapabilities();
-//        caps.setCapability("unexpectedAlertBehaviour", "dismiss");
-
-        //--расширенный лог баузера хром
-//        DesiredCapabilities cap = DesiredCapabilities.chrome();
-//        LoggingPreferences logPrefs = new LoggingPreferences();
-//        logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
-//        cap.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
-        ///
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        System.out.println(((HasCapabilities) driver).getCapabilities());
-//         DesiredCapabilities cap = new DesiredCapabilities();
-//         cap.setCapability(FirefoxDriver.MARIONETTE,true);
-//      driver = new FirefoxDriver(new FirefoxBinary(new File("C:\\Program Files\\Nightly\\firefox.exe")),new FirefoxProfile(),cap);
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("start-maximized");
-//          driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, 10);
-    }
-
     @After
     public void stop() {
         driver.quit();
@@ -105,14 +88,38 @@ public class TestBase {
         driver.findElement(By.name("login")).click();
     }
 
-//    public static ThreadLocal<WebDriver> tlApp = new ThreadLocal<>();
+    public void deleteAtBasket() {
+        mainPageProduct.open();
+        mainPageProduct.goToBasket();
+        List<WebElement> listPro = basketPage.getListOfBasketProduct();
+        int num = listPro.size();
+        for (int i = 0; i < num; i++) {
+            basketPage.deleteProductOfBasket();
+            wait.until(ExpectedConditions.stalenessOf(listPro.get(i)));
+            if (basketPage.isProductDelte()){
+                System.out.println("Все товары удалены");
+            }
+        }
+    }
 
-//        if (tlApp.get() != null) {
-//            app = tlApp.get();
-//            return;
-//        }
-//        tlApp.set(app);
+   
 
-//        Runtime.getRuntime().addShutdownHook(
-//                new Thread(() -> { app.quit(); app = null; })); }
+    public void addToBasket() {
+        mainPageProduct.open();
+        for (int i = 1; i <= 3; i++) {
+            List<WebElement> list = mainPageProduct.getListOfProduct();
+            list.get(i).click();
+            if (pageProduct.isPromotionalProduct()) {
+                pageProduct.selectSize();
+            }
+            pageProduct.addProductToBasket();
+            WebElement a = pageProduct.waitBasketCounter(i);
+            String s = pageProduct.getTextContentCounter();
+            Assert.assertTrue("Счетчик не обновлен", Integer.parseInt(s) == i);
+            mainPageProduct.open();
+        }
+    }
+
+
+
 }

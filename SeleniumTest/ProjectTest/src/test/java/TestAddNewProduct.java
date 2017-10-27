@@ -25,7 +25,7 @@ public class TestAddNewProduct extends TestBase {
         String endDate = DateFormat.format(tenDaysLater);
 
         int num = (int)(Math.random()*1000);
-        app.loginAdmin();
+        loginAdmin();
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
 
          /*Заполняю первый таб */

@@ -14,23 +14,9 @@ import java.util.List;
  */
 public class AddProductToBasket extends TestBase  {
 
-    @Test
-    public void testBasket () {
-        public void deleteAtBasket() {
+        @Test
+        public void TestBasket() {
             driver.get("http://localhost/litecart/en/");
-            driver.findElement(By.xpath("//div[@id='cart']/a[@class='link']")).click();
-            List<WebElement> listPro = driver.findElements(By.xpath("//table[@class='dataTable rounded-corners']//td[@class='item']"));
-            int num = listPro.size();
-            for (int i = 0; i < num; i++) {
-                driver.findElement(By.xpath("//button[@name='remove_cart_item']")).click();
-                wait.until(ExpectedConditions.stalenessOf(listPro.get(i)));
-                if (isElementPresent(By.xpath("//div[@id='checkout-cart-wrapper']//em"))){
-                    System.out.println("Все товары удалены");
-                }
-            }
-        }
-       @Test
-        public void addToBasket() {
             for (int i = 1; i <= 3; i++) {
                 List<WebElement> list = driver.findElements(By.xpath("//div[@id='box-most-popular']//ul/li"));
                 list.get(i).click();
@@ -45,7 +31,18 @@ public class AddProductToBasket extends TestBase  {
                 Assert.assertTrue("Счетчик не обновлен", Integer.parseInt(s) == i);
                 driver.get("http://localhost/litecart/en/");
             }
+            driver.get("http://localhost/litecart/en/");
+            driver.findElement(By.xpath("//div[@id='cart']/a[@class='link']")).click();
+            List<WebElement> listPro = driver.findElements(By.xpath("//table[@class='dataTable rounded-corners']//td[@class='item']"));
+            int num = listPro.size();
+            for (int i = 0; i < num; i++) {
+                driver.findElement(By.xpath("//button[@name='remove_cart_item']")).click();
+                wait.until(ExpectedConditions.stalenessOf(listPro.get(i)));
+                if (isElementPresent(By.xpath("//div[@id='checkout-cart-wrapper']//em"))){
+                    System.out.println("Все товары удалены");
+                }
+            }
         }
-    }
+
 
 }

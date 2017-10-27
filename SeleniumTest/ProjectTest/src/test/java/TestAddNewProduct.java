@@ -83,17 +83,5 @@ public class TestAddNewProduct extends TestBase {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

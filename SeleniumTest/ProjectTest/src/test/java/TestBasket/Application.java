@@ -1,5 +1,6 @@
 package TestBasket;
 
+import TestBasket.TestBasket;
 import org.junit.After;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,6 +15,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 
 /**
  * Created by User on 27.10.2017.
@@ -102,7 +104,7 @@ public class Application {
         }
     }
 
-   
+
 
     public void addToBasket() {
         mainPageProduct.open();
